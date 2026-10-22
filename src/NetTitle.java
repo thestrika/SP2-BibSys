@@ -11,7 +11,7 @@ public abstract class NetTitle extends Title{
     }
 
     public double getPseudoCopies(){
-        return (reach * 5) * (availability * 0.5) + use;
+        return (reach * 5) + (availability * 0.5) + use;
     }
 
 }
