@@ -9,7 +9,7 @@ public class PrintedBook extends Title{
     }
 
     public double calculatePoints(){
-        return 0;
+        return pages * copies * convertLiteratureType();
     }
 
 }

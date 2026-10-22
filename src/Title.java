@@ -14,9 +14,21 @@ public abstract class Title {
 
     public abstract double calculatePoints();
 
-    public double convertLiterature(){
-        return 0;
+    public double convertLiteratureType(){
+        switch (literatureType){
+            case "BI", "TE":
+                return 3.0;
+            case "LYRIK":
+                return 6.0;
+            case "SKØN":
+                return 1.7;
+            case "FAG":
+                return 1;
+            default:
+                return 0;
+        }
     }
+
 
 
 }

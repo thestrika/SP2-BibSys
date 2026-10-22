@@ -9,7 +9,7 @@ public class AudioBook extends Title{
     }
 
     public double calculatePoints(){
-       return 0;
+        return (durationInMinutes * 0.5) * copies * convertLiteratureType();
     }
 
 }
