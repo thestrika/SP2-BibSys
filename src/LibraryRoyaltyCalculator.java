@@ -18,9 +18,27 @@ public class LibraryRoyaltyCalculator {
         Title title8 = new PrintedBook("Wimpy Kid 2", "TE", 45, 130);
         Title title9 = new AudioBook("Wimpy Kid 3", "TE", 57, 170);
 
+        //ADDTITLE
+        author1.addTitle(title1);
+        author1.addTitle(title2);
+        author1.addTitle(title3);
+
+        author2.addTitle(title4);
+        author2.addTitle(title5);
+        author2.addTitle(title6);
+
+        author3.addTitle(title7);
+        author3.addTitle(title8);
+        author3.addTitle(title9);
+
+
+
+
+
+
         //CALCULATE ROYALTIES
         System.out.println(title2.calculatePoints());
-        System.out.println(title3.calculatePoints());
+        System.out.println(title2.calculateRoyalty());
 
 
     }
