@@ -37,8 +37,10 @@ public class LibraryRoyaltyCalculator {
 
 
         //CALCULATE ROYALTIES
-        System.out.println(title2.calculatePoints());
-        System.out.println(title2.calculateRoyalty());
+        System.out.println("Name: " + author1.getName() + " | " + Math.round(author1.calculateRoyalties()) + "kr. ");
+        System.out.println("Name: " + author2.getName() + " | " + Math.round(author2.calculateRoyalties()) + "kr. ");
+        System.out.println("Name: " + author3.getName() + " | " + Math.round(author3.calculateRoyalties()) + "kr. ");
+
 
 
     }

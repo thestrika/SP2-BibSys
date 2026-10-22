@@ -13,7 +13,11 @@ public class Author {
     }
 
     public double calculateRoyalties(){
-        return 0;
+        double sum = 0;
+        for(Title title : titles){
+            sum += title.calculateRoyalty();
+        }
+        return sum;
     }
 
     public String getName(){
