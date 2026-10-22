@@ -37,12 +37,18 @@ public class LibraryRoyaltyCalculator {
 
 
         //CALCULATE ROYALTIES - FYSISKE
-        System.out.println("Name: " + author1.getName() + " | " + Math.round(author1.calculateRoyalties()) + "kr. ");
-        System.out.println("Name: " + author2.getName() + " | " + Math.round(author2.calculateRoyalties()) + "kr. ");
-        System.out.println("Name: " + author3.getName() + " | " + Math.round(author3.calculateRoyalties()) + "kr. ");
+        System.out.println("Name: " + author1.getName() + " | " + String.format("%.2f", author1.calculateRoyalties()) + "kr. ");
+        System.out.println("Name: " + author2.getName() + " | " + String.format("%.2f", author2.calculateRoyalties()) + "kr. ");
+        System.out.println("Name: " + author3.getName() + " | " + String.format("%.2f", author3.calculateRoyalties()) + "kr. ");
 
         //CALCULATE ROYALTIES - NET TITLER
+        Author netAuthor = new Author("Net Test Author");
+        netAuthor.addTitle(new EBook("Net Book", "FAG", 97, 50, 205, 360000, false));
+        System.out.println("Name: " + netAuthor.getName() + " | " + String.format("%.2f", netAuthor.calculateRoyalties()) + "kr. ");
 
+        Author eBookNetAuthor = new Author("EAudioBook Net Test Author");
+        eBookNetAuthor.addTitle(new EAudioBook("Net eBook", "FAG", 97, 50, 205, 300));
+        System.out.println("Name: " + eBookNetAuthor.getName() + " | " + String.format("%.2f", eBookNetAuthor.calculateRoyalties()) + "kr. ");
 
     }
 

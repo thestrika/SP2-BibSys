@@ -17,7 +17,7 @@ public class Author {
         for(Title title : titles){
             sum += title.calculateRoyalty();
         }
-        return sum;
+        return Math.round(sum * 100) / 100.0;
     }
 
     public String getName(){
